@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="https://kit.fontawesome.com/3c87350865.js" crossorigin="anonymous"></script>
+    <title>News | 24/7</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <strong class="navbar-brand">
+                <p><span class="typed-text"></span><span class="cursor"></span></p>
+            </strong>
+        </div>
+    </nav>
+
+    <div class="container my-4">
+        <h3 style="display: inline-block">
+            <span class="badge bg-danger">News Headlines</span>
+        </h3>
+        <div class="btn-group" style="float: right">
+            <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown"
+                aria-expanded="false" style="margin-right: 1.5em">
+                <strong>Select Genre</strong>
+            </button>
+            <ul class="dropdown-menu">
+                <li class="dropdown-item" style="cursor: pointer" onclick="fun(this)">
+                    Business
+                </li>
+                <li class="dropdown-item" style="cursor: pointer" onclick="fun(this)">
+                    Entertainment
+                </li>
+                <li class="dropdown-item" style="cursor: pointer" onclick="fun(this)">
+                    General
+                </li>
+                <li class="dropdown-item" style="cursor: pointer" onclick="fun(this)">
+                    Health
+                </li>
+                <li class="dropdown-item" style="cursor: pointer" onclick="fun(this)">
+                    Science
+                </li>
+                <li class="dropdown-item" style="cursor: pointer" onclick="fun(this)">
+                    Technology
+                </li>
+                <li class="dropdown-item" style="cursor: pointer" onclick="fun(this)">
+                    Sports
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <div id="newsContainer">
+        </div>
+
+    </div>
+    <div class="container">
+        <hr>
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 ">
+            <div class="col-md-4 d-flex align-items-center">
+                <span class="text-muted">&copy; 2022 Developed by <strong><a
+                            href="https://www.linkedin.com/in/mayank-manik-a55292227" target="_blank"
+                            style="text-decoration: none;">Mayank</a></strong> Company, Inc</span>
+            </div>
+            <button type="button" id="gototop" class="btn btn-warning" style="float: right;"><i
+                    class="fa-solid fa-lg fa-circle-up"></i></button>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
